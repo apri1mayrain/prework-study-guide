@@ -12,9 +12,85 @@
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
     </header>
     <main>
-      <!-- Student code goes here -->
+      <section class="card" id="html-section">
+        <h2>HTML</h2>
+         <ul>
+           <li>Hypertext Markup Language (HTML) uses elements to add content and structure webpage to ease navigation.</li>
+           <li>An element refers to the entire element from opening to closing tag <u>(and all content in between tags)</u>, whereas a tag refers only to what appears inside the angle brackets.</li> 
+           <li>Elements nested inside other elements are called child elements. The element that holds all the children is known as the parent element.</li>
+           <li>Elements can be semantic or non-semantic. A semantic HTML element clearly desribes the content it contains and make the webpage accessible and easy to read by other devs, users, and in different browsers <u>(so use often)</u>.</br>
+               Semantic examples: body and section. Non-semantic examples: span and div.</li>
+           <li>Start HTML document with document type declaration followed by the HTML element.</li>
+           <li>The HTML element is the parent of two important child elements, head and body.</li>
+           <li>Content is added with text, header, image, and list elements. Page division and description is added with meta-related, content division, and semantic elements.</li>
+          </ul>
+        <h3>Head:</h3>
+           <ul>
+             <li>The <b>head</b> element contains information or metadata about the webpage. Important for accessibility, search engines, and performance. This is <u>not visible</u> to the user.</li>
+             <li>The <b>title</b> element contains the webpage title. Important for search engine optimization (SEO).</li>
+             <li>The <b>style</b> element defines the CSS styles.</li>
+             <li>The <b>base</b> element defines the base URL.</li>
+             <li>The <b>link</b> element connects an external resource.
+             <li>The <b>meta</b> element defines metadata such as character set, descriptions, keywords, author, and viewport.</li>
+             <li>The <b>script</b> element embeds client-side scripts.</li>
+           </ul>
+          <h3>Body:</h3>
+           <ul>
+             <li>The <b>body</b> element represents <u>visible content</u> shown to the user.</li>
+             <li>The <b>header</b> element appears at top of page and contains navigation menu or introductory content.</li>
+             <li>The <b>main</b> element contains the main content.</li>
+             <li>The <b>footer</b> element appears at bottom of page and contains author, copyright, sitemap, and navigation.</li>
+             <li>The <b>span</b> element creates an in-line division to markup part of text or document and is non-semantic.</li>
+             <li>The <b>div</b> element creates a division in the doucment and is non-semantic.</li>
+             <li>The <b>h1, h2, h3, h4, h5, and h6</b> elements are text headings (listed in decreasing size).</li>
+             <li>The <b>p</b> element is used for a paragraph or block of text.</li>
+             <li>The <b>ul, ol, and li</b> elements stand for unordered list, ordered list, and list items.</li>
+             <li>The <b>img</b> element contains information of images displayed. <b>src</b> attribute defines location of image. <b>alt</b> attribute describes appearance and functionality of image, important for screen readers and improves search engine rankings.</li>
+             <li>The <b>br</b> element creates a line break or line of empty space.</li>
+             <li>The <b>a</b> element stands for anchor and creates links to webpages. href attribute points to the URL.</li>
+             <li>The <b>section</b> element creates sections of content (for organization). <b>class</b> attribute creates type of class for an element and multiple elements can use the same class. <b>id</b> attribute is used to identify elements and select them.</li>   
+           </ul>
+      </section>
+      <section class="card" id="css-section">
+        <h2>CSS</h2>
+          <ul>
+            <li>Enter CSS notes here</li>
+            <li></li>
+          </ul>
+        </section>
+      <section class="card" id="git-section">
+       <h2>Git</h2>
+          <h3>GitHub Flow:</h3>
+            <ol>
+             <li>Create a branch. The default branch is called <u>main</u> and it should be the final, most updated version of the application. Complete additional work with <u>feature</u> branches. Features need a good name to indicate the purpose of it.</li>
+             <li>Make changes. Commit and push changes to your branch often. Each commit is an isolated, complete change.</li>
+             <li>Create a pull request (PR). Add descriptive title. The body should contain what changes were made, how the feature is supposed to function/what problem it solves, and how to start the application so it can be tested.</br>
+                 Link any issues the changes addresses. Ask for feedback. Some repos require an approving review before pull requests can be merged.</li>
+             <li>Address review comments.</li>
+             <li> Merge your pull request once approved. May need to address merge conflicts.</li>
+             <li>Delete your branch. Indicates work is complete and prevents anyone from accidentally using old branches. Pull request and commit history will not be deleted and you can always restore deleted branches or revert pull requests if needed.</li>
+            </ol>
+          <h3>Git Commands:</h3>
+            <ul>
+             <li><u><b>git</b> must precede every Git statement.</u></li>
+             <li><b>git status</b>: check current working branch.</li>
+             <li><b>git checkout -b branch-name</b>: create new branch and switch to it.</li>
+             <li><b>git checkout branch-name</b>: switch to existing branch.</li>
+             <li><b>git revert [SHA]</b>: revert code to specific version defined by SHA.</li>
+             <li><b>git add -a</b>: add changes to staged branch (or next commit).</li>
+             <li><b>git commit -m "commit message"</b>: create snapshot of staged changes and add commit message or description.</li>
+             <li><b>git pull origin branch-name</b>: fetch and merge remote commits into local enviroment. <u>It is important to always do a git pull before you start to work.</u></li>
+             <li><b>git push origin feature/feature-name</b>: send local branch to remote GitHub repo. Push can create a new remote branch or merge changes to an existing branch.</li>
+          </ul>
+      </section>
+      <section class="card" id="javascript-section">
+        <h2>JavaScript</h2>
+          <ul>
+            <li>Enter JavaScript notes here</li>
+            <li></li>
+          </ul>
+      </section>
     </main>
-
     <footer>
       <p>I can code!</p>
     </footer>
