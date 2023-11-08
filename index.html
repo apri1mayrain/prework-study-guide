@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
   </head>
   <body>
@@ -18,8 +19,7 @@
            <li>Hypertext Markup Language (HTML) uses elements to add content and structure webpage to ease navigation.</li>
            <li>An element refers to the entire element from opening to closing tag <u>(and all content in between tags)</u>, whereas a tag refers only to what appears inside the angle brackets.</li> 
            <li>Elements nested inside other elements are called child elements. The element that holds all the children is known as the parent element.</li>
-           <li>Elements can be semantic or non-semantic. A semantic HTML element clearly desribes the content it contains and make the webpage accessible and easy to read by other devs, users, and in different browsers <u>(so use often)</u>.</br>
-               Semantic examples: body and section. Non-semantic examples: span and div.</li>
+           <li>Elements can be semantic or non-semantic. A semantic HTML element clearly desribes the content it contains and make the webpage accessible and easy to read by other devs, users, and in different browsers <u>(so use often)</u>. Semantic examples: body and section. Non-semantic examples: span and div.</li>
            <li>Start HTML document with document type declaration followed by the HTML element.</li>
            <li>The HTML element is the parent of two important child elements, head and body.</li>
            <li>Content is added with text, header, image, and list elements. Page division and description is added with meta-related, content division, and semantic elements.</li>
@@ -30,7 +30,7 @@
              <li>The <b>title</b> element contains the webpage title. Important for search engine optimization (SEO).</li>
              <li>The <b>style</b> element defines the CSS styles.</li>
              <li>The <b>base</b> element defines the base URL.</li>
-             <li>The <b>link</b> element connects an external resource.
+             <li>The <b>link</b> element connects an external resource. <b>rel</b> attribute defines relationship between documents. <b>href</b> attribute points to URL of external resource.
              <li>The <b>meta</b> element defines metadata such as character set, descriptions, keywords, author, and viewport.</li>
              <li>The <b>script</b> element embeds client-side scripts.</li>
            </ul>
@@ -54,8 +54,20 @@
       <section class="card" id="css-section">
         <h2>CSS</h2>
           <ul>
-            <li>Enter CSS notes here</li>
-            <li></li>
+           <li>Cascading Style Sheets (CSS) gives the content <b>style</b>. It defines the colors, aesthetics, visual layout, and organization.</li>
+           <li>There are three ways to use CSS: in-line, internal style sheet, or external style sheet.</li>
+           <li>In-line is good for quick, permanent changes but is less flexible.</li>
+           <li>Internal style sheet is defined under head > style element and applies to any tagged elements on the page.</li>
+           <li>External style sheet is commonly preferred and makes changes easier. Keep in mind <u>separation of concerns</u>, or separation of code into different files based on usage.</li>
+           <li>A CSS rule contains selector(s) and {declaration block}. The selector defines the element(s) or attribute(s) the declarations apply to. The declaration block contains the properties and their values.</li>
+           <li>Every HTML element is a box the contains margin <u>(outside the element)</u> > border > padding > content <u>(the last three are part of the element).</u></li>
+           <li>The asterisk, or wildcard symbol, * means the style will apply to all elements.</li>
+           <li>Select multiple elements separated with a comma (example: header, footer). Keep in mind <u>Do Not Repeat Yourself (DRY) code</u> to reduce size and complexity of code.</li>
+           <li>Create a class selector by preceding the element with a period.</li>
+           <li>Refer to colors using semantics such as gray or blue, or by using hex code #.</li>
+           <li>The <b>margin</b> property indicates amount of space <u>outside</u> an element.</li>
+           <li>The <b>padding</b> property adds space around the content <u>inside</u> an element.</li>
+           <li>The <b>box-shadow</b> property adds adds a shadow effect around the element's frame and uses offset values of X and Y, blur and spread radius, and color.</li>
           </ul>
         </section>
       <section class="card" id="git-section">
@@ -64,8 +76,7 @@
             <ol>
              <li>Create a branch. The default branch is called <u>main</u> and it should be the final, most updated version of the application. Complete additional work with <u>feature</u> branches. Features need a good name to indicate the purpose of it.</li>
              <li>Make changes. Commit and push changes to your branch often. Each commit is an isolated, complete change.</li>
-             <li>Create a pull request (PR). Add descriptive title. The body should contain what changes were made, how the feature is supposed to function/what problem it solves, and how to start the application so it can be tested.</br>
-                 Link any issues the changes addresses. Ask for feedback. Some repos require an approving review before pull requests can be merged.</li>
+             <li>Create a pull request (PR). Add descriptive title. The body should contain what changes were made, how the feature is supposed to function/what problem it solves, and how to start the application so it can be tested. Link any issues the changes addresses. Ask for feedback. Some repos require an approving review before pull requests can be merged.</li>
              <li>Address review comments.</li>
              <li> Merge your pull request once approved. May need to address merge conflicts.</li>
              <li>Delete your branch. Indicates work is complete and prevents anyone from accidentally using old branches. Pull request and commit history will not be deleted and you can always restore deleted branches or revert pull requests if needed.</li>
